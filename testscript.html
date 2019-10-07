@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset = "UTF-8">
+	<meta charset="UTF-8">
 	<title>Javascript練習用</title>
-	<script type="text/javascript" src="../js/testscript.js"></script>
+	<link rel="stylesheet" href="./css/stylesheet.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./js/testscript.js"></script>
 </head>
+
 <body>
-	<h1>個人情報入力フォーム</h1>
-	<form name="frm1" action="xxx.html">
-		<fieldset>
-			<legend>名前</legend>
-			<label>姓
-				<input type="text" name="lastname">
-			</label>
-			<label>名
-				<input type="text" name="firstname">
-			</label>
-		</fieldset>
-		<fieldset>
-			<legend>性別</legend>
-			<label>
-				<input type="radio" name="gender" value="m">男
-			</label>
-			<label>
-				<input type="radio" name="gender" value="m">女
-			</label>
-		</fieldset>
-		<fieldset>
-			<legend>生年月日</legend>
-			<label>元号
-				<select class="" name="">
-					<option value="1">大正</option>
-					<option value="2">昭和</option>
-					<option value="3">平成</option>
-					<option value="4"　selected>令和</option>
-				</select>
-			</label>
-			<label>
-				<input type="text" name="bornyear">年
-			</label>
-			<label>
-				<input type="text" name="bornmonth">月
-			</label>
-			<label>
-				<input type="text" name="bornday">日
-			</label>
-			</label>
-		</fieldset>
-		<input type="button" onclick="inputCheck();" value="送信">
-	</form>>
-	<a href ="../memberList/memberList.html">一覧へ戻る</a>
+	<div class="header">
+		<div class="header-logo">TestSample</div>
+		<ul class="header-list">
+			<li>sampleA</li>
+			<li>sampleB</li>
+			<li>お問い合わせ</li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="main-title">
+		<h1>個人情報入力フォーム</h1>
+		<p>情報を入力してください。</p>
+		</div>
+		
+		<div calss="main-comtents">
+			<form name="frm1" action="xxx.html">
+				<fieldset class="fld">
+					<legend>名前</legend>
+					<label>姓
+						<input type="text" name="lastname" size="20">
+					</label>
+					<label>名
+						<input type="text" name="firstname" size="20">
+					</label>
+				</fieldset>
+				<fieldset class="fld">
+					<legend>性別</legend>
+					<label>
+						<input type="radio" name="gender" value="m">男
+					</label>
+					<label>
+						<input type="radio" name="gender" value="m">女
+					</label>
+				</fieldset>
+				<fieldset class="fld">
+					<legend>生年月日</legend>
+					<label>元号
+						<select class="" name="">
+							<option value="1">大正</option>
+							<option value="2">昭和</option>
+							<option value="3">平成</option>
+							<option value="4" selected>令和</option>
+						</select>
+					</label>
+					<label>
+						<input type="text" name="bornyear" size="3">年
+					</label>
+					<label>
+						<input type="text" name="bornmonth" size="2">月
+					</label>
+					<label>
+						<input type="text" name="bornday" size="2">日
+					</label>
+					</label>
+				</fieldset>
+				<div class="submit">
+					<input type="button" onclick="inputCheck();" value="送信">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="hotter">
+		
+	</div>
 </body>
+
 </html>
